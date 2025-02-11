@@ -1,0 +1,79 @@
+@startuml "Wirestock OTP"
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+AddElementTag("microService", $shape=EightSidedShape(), $bgColor="CornflowerBlue", $fontColor="white", $legendText="micro service\neight sided")
+AddElementTag("storage", $shape=RoundedBoxShape(), $bgColor="lightSkyBlue", $fontColor="white")
+
+title Container Diagram for Medicamente
+
+Person(client, "Client", "")
+Person(doctor, "Doctor", "")
+Person(reception, "Reception Administrator", "")
+Person(bookkeeper, "Bookkeeper", "")
+Person(warehouseKeeper, "Warehouse Keeper", "")
+
+System_Boundary(messageBroker, "Message Broker") {
+    Container(rabbitMQ, "RabbitMQ", "", "")
+}
+
+System_Ext(lab, "Laboratory", "Provides access to medical analysis results")
+
+System_Boundary(emr, "EMR") {
+    Container(emrLog, "EMR Logbook", "Java", "RBAC+ABAC", $tags="microService")
+    Container(emrAnalysis, "EMR Analysis", "Java", "RBAC+ABAC", $tags="microService")
+}
+
+System_Boundary(lake, "Data Lakehouse") {
+    Container(elt, "ELT", "Debezium + Kafka + Flink for DBs / Airflow for files", "", $tags="microService")
+    ContainerDb(lhStorage, "Data Lakehouse Storage", "S3-compatible + Iceberg", "Stores impersonalized raw data. AES256", $tags = "storage")
+}
+Rel(elt, lhStorage, "Loads data", "TLS")
+
+System_Boundary(clientPortal, "Client Portal") {
+    Container(clientWebClient, "Client Frontend", "React", "")
+}
+Rel(client, clientWebClient, "Uses system")
+
+System_Boundary(receptionPortal, "Reception Portal") {
+    Container(receptionWebClient, "Reception Frontend", "React", "")
+}
+Rel(reception, receptionWebClient, "Uses system")
+
+System_Boundary(doctorPortal, "Doctor Portal") {
+    Container(doctorWebClient, "Doctor Frontend", "React", "")
+}
+Rel(doctor, doctorWebClient, "Uses system")
+
+System_Boundary(identity, "User Identity") {
+    Container(identityService, "Identity Service", "Keycloak", "A service responsible for user authentication (+2FA for employers), RBAC roles assignment", $tags="microService")
+    ContainerDb(identityServiceDb, "Users Database", "PostgreSQL", "Stores user data (not PII). AES256", $tags = "storage")
+}
+Rel(identityService, identityServiceDb, "Stores data in", "TLS")
+Rel(clientWebClient, identityService, "Perform requests", "HTTPS")
+Rel(receptionWebClient, identityService, "Perform requests", "HTTPS")
+Rel(doctorWebClient, identityService, "Perform requests", "HTTPS")
+
+System_Boundary(crm, "CRM") {
+}
+
+System_Boundary(labIntegration, "Laboratory Integration") {
+}
+
+System_Boundary(schedule, "Schedule") {
+    Container(scheduleService, "Java", $tags="microService")
+    ContainerDb(scheduleServiceDb, "Schedule Database", "MongoDB", "Stores user data (not PII). AES256", $tags = "storage")
+}
+Rel(scheduleService, scheduleServiceDb, "Stores data in", "TLS")
+Rel(clientWebClient, scheduleService, "Perform requests", "HTTPS")
+Rel(receptionWebClient, scheduleService, "Perform requests", "HTTPS")
+
+System_Boundary(bookkeeping, "Bookkeeping") {
+    Container(1c, "1C", "", "", $tags="microService")
+}
+
+System_Boundary(warehouse, "Warehouse") {
+}
+
+System_Ext(acquiring, "Payment Gateway", "Receive online payments")
+
+@enduml
