@@ -1,0 +1,71 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.9">
+  <diagram id="N6qk-fpuj5O9VLWjc1sx" name="Page-1">
+    <mxGraphModel dx="1026" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NUbIsI4zn4_X9o-EOuqr-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;endArrow=none;startFill=1;startArrow=classic;" parent="1" source="X-OMy3_uxv96DvKtnB-F-1" target="MGN90CtNkKh0Gi1kcAy7-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NUbIsI4zn4_X9o-EOuqr-11" value="&lt;font&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Patient ID&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Payment amount&lt;/font&gt;&lt;/font&gt;&lt;div&gt;Payment date&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NUbIsI4zn4_X9o-EOuqr-7" vertex="1" connectable="0">
+          <mxGeometry x="-0.0093" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NUbIsI4zn4_X9o-EOuqr-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="X-OMy3_uxv96DvKtnB-F-1" target="NUbIsI4zn4_X9o-EOuqr-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NUbIsI4zn4_X9o-EOuqr-18" value="Patient ID&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;Date Of Birth&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Payment amount&lt;/font&gt;&lt;div&gt;Payment date&lt;/div&gt;&lt;/div&gt;&lt;div&gt;Analysis date&lt;br&gt;&lt;/div&gt;&lt;div&gt;Analysis type&lt;div&gt;Visit date&lt;br&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Doctor Type&lt;br&gt;Symptoms&lt;/font&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NUbIsI4zn4_X9o-EOuqr-17" vertex="1" connectable="0">
+          <mxGeometry x="0.0484" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X-OMy3_uxv96DvKtnB-F-1" value="9.1" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="500" y="280" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OMy3_uxv96DvKtnB-F-2" value="Identify Payment Ownership" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;align=center;" parent="X-OMy3_uxv96DvKtnB-F-1" vertex="1">
+          <mxGeometry y="26" width="140" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="MGN90CtNkKh0Gi1kcAy7-1" value="Payments Excel file" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;shape=mxgraph.ios7ui.horLines;" parent="1" vertex="1">
+          <mxGeometry x="200" y="237.5" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NUbIsI4zn4_X9o-EOuqr-2" value="Patients Excel file" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;shape=mxgraph.ios7ui.horLines;" parent="1" vertex="1">
+          <mxGeometry x="200" y="130" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NUbIsI4zn4_X9o-EOuqr-3" value="RegistryByDate&lt;br&gt;Excel File" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;shape=mxgraph.ios7ui.horLines;" parent="1" vertex="1">
+          <mxGeometry x="200" y="350" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NUbIsI4zn4_X9o-EOuqr-5" value="Journal Doctor FIO X&lt;br&gt;Excel file" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;shape=mxgraph.ios7ui.horLines;" parent="1" vertex="1">
+          <mxGeometry x="200" y="460" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NUbIsI4zn4_X9o-EOuqr-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.54;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;startFill=1;startArrow=classic;" parent="1" source="X-OMy3_uxv96DvKtnB-F-1" target="NUbIsI4zn4_X9o-EOuqr-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NUbIsI4zn4_X9o-EOuqr-14" value="Patient ID&lt;br&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;Date Of Birth&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NUbIsI4zn4_X9o-EOuqr-6" vertex="1" connectable="0">
+          <mxGeometry x="-0.4862" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NUbIsI4zn4_X9o-EOuqr-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.993;entryY=0.44;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;startFill=1;startArrow=classic;" parent="1" source="X-OMy3_uxv96DvKtnB-F-2" target="NUbIsI4zn4_X9o-EOuqr-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NUbIsI4zn4_X9o-EOuqr-12" value="Patient ID&lt;div&gt;Analysis date&lt;br&gt;Analysis type&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NUbIsI4zn4_X9o-EOuqr-8" vertex="1" connectable="0">
+          <mxGeometry x="0.0004" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NUbIsI4zn4_X9o-EOuqr-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.993;entryY=0.52;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;startFill=1;startArrow=classic;" parent="1" source="X-OMy3_uxv96DvKtnB-F-1" target="NUbIsI4zn4_X9o-EOuqr-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NUbIsI4zn4_X9o-EOuqr-13" value="&lt;font&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Patient ID&lt;/font&gt;&lt;/font&gt;&lt;div&gt;&lt;font&gt;Visit date&lt;br&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Doctor Type&lt;br&gt;Symptoms&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NUbIsI4zn4_X9o-EOuqr-9" vertex="1" connectable="0">
+          <mxGeometry x="-0.3087" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NUbIsI4zn4_X9o-EOuqr-16" value="Analyst" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
+          <mxGeometry x="770" y="283.5" width="120" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
