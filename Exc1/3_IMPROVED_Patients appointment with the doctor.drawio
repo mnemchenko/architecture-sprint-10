@@ -63,7 +63,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="6VW97DQiAT4Yx4PyGjzp-26" value="PII&lt;div&gt;+ Patient ID&lt;br&gt;+ Convenient&lt;br&gt;Time&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#FF0000;" parent="6VW97DQiAT4Yx4PyGjzp-25" vertex="1" connectable="0">
+        <mxCell id="6VW97DQiAT4Yx4PyGjzp-26" value="&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;+ Name + Patient ID&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;(tokenization)&lt;br&gt;+ Convenient&lt;br&gt;Time&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#FF0000;" parent="6VW97DQiAT4Yx4PyGjzp-25" vertex="1" connectable="0">
           <mxGeometry x="0.429" relative="1" as="geometry">
             <mxPoint x="7" as="offset" />
           </mxGeometry>
@@ -72,10 +72,10 @@
           <mxGeometry x="520" y="221" width="120" height="50" as="geometry" />
         </mxCell>
         <mxCell id="MGN90CtNkKh0Gi1kcAy7-1" value="Journal Doctor FIO X&lt;br&gt;Excel file" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;shape=mxgraph.ios7ui.horLines;" parent="1" vertex="1">
-          <mxGeometry x="980" y="223" width="135" height="50" as="geometry" />
+          <mxGeometry x="1010" y="223" width="135" height="50" as="geometry" />
         </mxCell>
         <mxCell id="MGN90CtNkKh0Gi1kcAy7-8" value="3.2" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
-          <mxGeometry x="740" y="221" width="140" height="52" as="geometry" />
+          <mxGeometry x="770" y="221" width="140" height="52" as="geometry" />
         </mxCell>
         <mxCell id="MGN90CtNkKh0Gi1kcAy7-9" value="Search Available Time" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;align=center;" parent="MGN90CtNkKh0Gi1kcAy7-8" vertex="1">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
@@ -138,7 +138,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="6VW97DQiAT4Yx4PyGjzp-23" value="3.4" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
-          <mxGeometry x="740" y="329" width="140" height="52" as="geometry" />
+          <mxGeometry x="770" y="329" width="140" height="52" as="geometry" />
         </mxCell>
         <mxCell id="6VW97DQiAT4Yx4PyGjzp-24" value="Appoint Visit" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;align=center;" parent="6VW97DQiAT4Yx4PyGjzp-23" vertex="1">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
@@ -146,7 +146,7 @@
         <mxCell id="6VW97DQiAT4Yx4PyGjzp-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.488;entryY=0.955;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="6VW97DQiAT4Yx4PyGjzp-23" target="MGN90CtNkKh0Gi1kcAy7-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6VW97DQiAT4Yx4PyGjzp-28" value="&lt;span style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;PII&lt;/span&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;+ Patient ID&lt;/font&gt;&lt;/b&gt;&lt;br style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;&lt;span style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;+ Convenient&lt;/span&gt;&lt;br style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;&lt;span style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;Time&lt;/span&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6VW97DQiAT4Yx4PyGjzp-27" vertex="1" connectable="0">
+        <mxCell id="6VW97DQiAT4Yx4PyGjzp-28" value="&lt;div style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;+ Name + Patient ID&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;(tokenization)&lt;br&gt;+ Convenient&lt;br&gt;Time&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6VW97DQiAT4Yx4PyGjzp-27" vertex="1" connectable="0">
           <mxGeometry x="-0.3328" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -154,13 +154,13 @@
         <mxCell id="6VW97DQiAT4Yx4PyGjzp-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="6VW97DQiAT4Yx4PyGjzp-29" target="6VW97DQiAT4Yx4PyGjzp-31" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6VW97DQiAT4Yx4PyGjzp-38" value="&lt;span style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;PII&lt;/span&gt;&lt;br style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;&lt;span style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;Times&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6VW97DQiAT4Yx4PyGjzp-37" vertex="1" connectable="0">
+        <mxCell id="6VW97DQiAT4Yx4PyGjzp-38" value="&lt;div style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;+ Name + Patient ID&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;(tokenization)&lt;br&gt;+ Convenient&lt;br&gt;Time&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6VW97DQiAT4Yx4PyGjzp-37" vertex="1" connectable="0">
           <mxGeometry x="-0.0209" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="6VW97DQiAT4Yx4PyGjzp-29" value="3.5" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
-          <mxGeometry x="740" y="440" width="140" height="52" as="geometry" />
+          <mxGeometry x="770" y="440" width="140" height="52" as="geometry" />
         </mxCell>
         <mxCell id="6VW97DQiAT4Yx4PyGjzp-30" value="View Visits Schedule" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;align=center;" parent="6VW97DQiAT4Yx4PyGjzp-29" vertex="1">
           <mxGeometry y="26" width="140" height="26" as="geometry" />
@@ -171,7 +171,7 @@
         <mxCell id="6VW97DQiAT4Yx4PyGjzp-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.81;entryY=0.955;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;startFill=1;startArrow=classic;" parent="1" source="6VW97DQiAT4Yx4PyGjzp-29" target="MGN90CtNkKh0Gi1kcAy7-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6VW97DQiAT4Yx4PyGjzp-36" value="&lt;span style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;PII&lt;/span&gt;&lt;br style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;&lt;span style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;+&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;Times&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6VW97DQiAT4Yx4PyGjzp-32" vertex="1" connectable="0">
+        <mxCell id="6VW97DQiAT4Yx4PyGjzp-36" value="&lt;div style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;+ Name + Patient ID&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;(tokenization)&lt;br&gt;+ Convenient&lt;br&gt;Time&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="6VW97DQiAT4Yx4PyGjzp-32" vertex="1" connectable="0">
           <mxGeometry x="-0.593" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>

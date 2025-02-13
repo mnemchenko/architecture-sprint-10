@@ -15,7 +15,7 @@
         <mxCell id="NUbIsI4zn4_X9o-EOuqr-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="X-OMy3_uxv96DvKtnB-F-1" target="NUbIsI4zn4_X9o-EOuqr-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NUbIsI4zn4_X9o-EOuqr-18" value="Patient ID&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;Date Of Birth&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Payment amount&lt;/font&gt;&lt;div&gt;Payment date&lt;/div&gt;&lt;/div&gt;&lt;div&gt;Analysis date&lt;br&gt;&lt;/div&gt;&lt;div&gt;Analysis type&lt;div&gt;Visit date&lt;br&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Doctor Type&lt;br&gt;Symptoms&lt;/font&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NUbIsI4zn4_X9o-EOuqr-17" vertex="1" connectable="0">
+        <mxCell id="NUbIsI4zn4_X9o-EOuqr-18" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;Determined masked Patient ID&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;Age&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Payment amount&lt;/font&gt;&lt;div&gt;Payment date&lt;/div&gt;&lt;/div&gt;&lt;div&gt;Analysis date&lt;br&gt;&lt;/div&gt;&lt;div&gt;Analysis type&lt;div&gt;Visit date&lt;br&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Doctor Type&lt;br&gt;Symptoms&lt;/font&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NUbIsI4zn4_X9o-EOuqr-17" vertex="1" connectable="0">
           <mxGeometry x="0.0484" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -41,7 +41,7 @@
         <mxCell id="NUbIsI4zn4_X9o-EOuqr-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.54;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;startFill=1;startArrow=classic;" parent="1" source="X-OMy3_uxv96DvKtnB-F-1" target="NUbIsI4zn4_X9o-EOuqr-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="NUbIsI4zn4_X9o-EOuqr-14" value="Patient ID&lt;br&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;Date Of Birth&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NUbIsI4zn4_X9o-EOuqr-6" vertex="1" connectable="0">
+        <mxCell id="NUbIsI4zn4_X9o-EOuqr-14" value="&lt;b&gt;&lt;font&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;Determined masked Patient ID&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;Age&lt;/font&gt;&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="NUbIsI4zn4_X9o-EOuqr-6" vertex="1" connectable="0">
           <mxGeometry x="-0.4862" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -63,7 +63,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="NUbIsI4zn4_X9o-EOuqr-16" value="Analyst" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
-          <mxGeometry x="770" y="283.5" width="120" height="50" as="geometry" />
+          <mxGeometry x="880" y="283.5" width="120" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

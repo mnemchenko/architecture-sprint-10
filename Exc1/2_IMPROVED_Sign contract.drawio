@@ -1,0 +1,172 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.0.9 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="26.0.9">
+  <diagram id="N6qk-fpuj5O9VLWjc1sx" name="Page-2">
+    <mxGraphModel dx="1026" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="MGN90CtNkKh0Gi1kcAy7-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="X-OMy3_uxv96DvKtnB-F-1" target="295M81zyYsNqJInJmMzN-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="320" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MGN90CtNkKh0Gi1kcAy7-6" value="&lt;b&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;PII&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MGN90CtNkKh0Gi1kcAy7-5" vertex="1" connectable="0">
+          <mxGeometry x="-0.0357" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X-OMy3_uxv96DvKtnB-F-1" value="2.1" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="290" y="221" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="X-OMy3_uxv96DvKtnB-F-2" value="Identify Patient" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;align=center;" parent="X-OMy3_uxv96DvKtnB-F-1" vertex="1">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="MGN90CtNkKh0Gi1kcAy7-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lKEf2hgWr-fqYzMqD4Bx-1" target="X-OMy3_uxv96DvKtnB-F-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MGN90CtNkKh0Gi1kcAy7-3" value="&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;&lt;b&gt;PII&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MGN90CtNkKh0Gi1kcAy7-2" vertex="1" connectable="0">
+          <mxGeometry x="-0.0448" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="lKEf2hgWr-fqYzMqD4Bx-1" target="MGN90CtNkKh0Gi1kcAy7-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-17" value="&lt;b&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;Signature (PII)&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L7u_aitgmxtAMFWft70c-16" vertex="1" connectable="0">
+          <mxGeometry x="0.1747" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lKEf2hgWr-fqYzMqD4Bx-1" value="Patient" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
+          <mxGeometry x="70" y="222" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="295M81zyYsNqJInJmMzN-1" target="MGN90CtNkKh0Gi1kcAy7-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-7" value="PII" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#FF0000;" parent="L7u_aitgmxtAMFWft70c-6" vertex="1" connectable="0">
+          <mxGeometry x="-0.3865" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="295M81zyYsNqJInJmMzN-1" target="L7u_aitgmxtAMFWft70c-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-19" value="&lt;b&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;PII&lt;/font&gt;&lt;/b&gt;&lt;br&gt;+ Contract Conditions" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L7u_aitgmxtAMFWft70c-18" vertex="1" connectable="0">
+          <mxGeometry x="-0.4423" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="295M81zyYsNqJInJmMzN-1" value="Reception" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
+          <mxGeometry x="530" y="222" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MGN90CtNkKh0Gi1kcAy7-1" value="Patients Excel file" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;shape=mxgraph.ios7ui.horLines;" parent="1" vertex="1">
+          <mxGeometry x="292.5" y="310" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="MGN90CtNkKh0Gi1kcAy7-8" target="lKEf2hgWr-fqYzMqD4Bx-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-15" value="&lt;b&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;PII&lt;/font&gt;&lt;/b&gt; + Contract Conditions" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L7u_aitgmxtAMFWft70c-14" vertex="1" connectable="0">
+          <mxGeometry x="0.0305" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MGN90CtNkKh0Gi1kcAy7-8" value="2.2" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="600" y="370" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="MGN90CtNkKh0Gi1kcAy7-9" value="Sign Contract" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;align=center;" parent="MGN90CtNkKh0Gi1kcAy7-8" vertex="1">
+          <mxGeometry y="26" width="140" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-1" value="&lt;b&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;Contract data file&lt;br&gt;(separate folder)&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;+ RBAC (save only)&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;+Disk Encryption&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;shape=mxgraph.ios7ui.horLines;" parent="1" vertex="1">
+          <mxGeometry x="492.5" y="640" width="135" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="L7u_aitgmxtAMFWft70c-2" target="L7u_aitgmxtAMFWft70c-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-26" value="&lt;b style=&quot;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;Patient ID (tokenization)&lt;/font&gt;&lt;/b&gt;&lt;br style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Contract Conditions&lt;/font&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L7u_aitgmxtAMFWft70c-25" vertex="1" connectable="0">
+          <mxGeometry x="-0.095" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lp8KIXkaJ4MocEGtsBxc-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="L7u_aitgmxtAMFWft70c-2" target="Lp8KIXkaJ4MocEGtsBxc-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lp8KIXkaJ4MocEGtsBxc-3" value="&lt;b&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;PII&lt;br&gt;(including Signature)&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Lp8KIXkaJ4MocEGtsBxc-2">
+          <mxGeometry x="-0.0444" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-2" value="2.3" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#e0e0e0;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12" parent="1" vertex="1">
+          <mxGeometry x="490" y="480" width="140" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-3" value="Store Signed Contract" style="text;html=1;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;whiteSpace=wrap;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;align=center;" parent="L7u_aitgmxtAMFWft70c-2" vertex="1">
+          <mxGeometry y="26" width="140" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.004;entryY=0.46;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;startFill=1;startArrow=classic;" parent="1" source="X-OMy3_uxv96DvKtnB-F-2" target="MGN90CtNkKh0Gi1kcAy7-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-5" value="Patient ID" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L7u_aitgmxtAMFWft70c-4" vertex="1" connectable="0">
+          <mxGeometry x="-0.0576" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-8" value="Reception Desk" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;shape=mxgraph.ios7ui.horLines;" parent="1" vertex="1">
+          <mxGeometry x="880" y="412" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.015;entryY=0.48;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="MGN90CtNkKh0Gi1kcAy7-8" target="L7u_aitgmxtAMFWft70c-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-10" value="PII&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Contract Conditions&lt;/font&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontStyle=1;fontColor=#FF0000;" parent="L7u_aitgmxtAMFWft70c-9" vertex="1" connectable="0">
+          <mxGeometry x="-0.0591" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-11" value="Reception Computer&lt;br&gt;File System&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;+Disk Encription&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;+AntiVirus&lt;br&gt;+Remove files auto in 1h&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;shape=mxgraph.ios7ui.horLines;" parent="1" vertex="1">
+          <mxGeometry x="870" y="210" width="190" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.007;entryY=0.56;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="MGN90CtNkKh0Gi1kcAy7-8" target="L7u_aitgmxtAMFWft70c-11" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="383" />
+              <mxPoint x="820" y="267" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-13" value="&lt;span style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;PII&lt;/span&gt;&lt;br style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;&lt;span&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Contract Conditions&lt;/font&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L7u_aitgmxtAMFWft70c-12" vertex="1" connectable="0">
+          <mxGeometry x="-0.0184" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=-0.02;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="L7u_aitgmxtAMFWft70c-2" target="L7u_aitgmxtAMFWft70c-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-22" value="&lt;b&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;PII&lt;br&gt;(including Signature)&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L7u_aitgmxtAMFWft70c-21" vertex="1" connectable="0">
+          <mxGeometry x="-0.0841" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-23" value="Bookkeeper" style="whiteSpace=wrap;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;align=center;" parent="1" vertex="1">
+          <mxGeometry x="200" y="480" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-24" value="1C" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;shape=mxgraph.ios7ui.horLines;" parent="1" vertex="1">
+          <mxGeometry x="192.5" y="640" width="135" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.996;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="L7u_aitgmxtAMFWft70c-3" target="L7u_aitgmxtAMFWft70c-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="670" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="410" y="516" />
+              <mxPoint x="410" y="665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L7u_aitgmxtAMFWft70c-30" value="&lt;b&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;Patient ID (tokenization)&lt;/font&gt;&lt;/b&gt;&lt;br style=&quot;color: rgb(255, 0, 0); font-weight: 700;&quot;&gt;&lt;font style=&quot;color: rgb(0, 0, 0);&quot;&gt;Contract Conditions&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="L7u_aitgmxtAMFWft70c-28" vertex="1" connectable="0">
+          <mxGeometry x="-0.1193" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lp8KIXkaJ4MocEGtsBxc-1" value="Documents cabinet&lt;br&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(0, 0, 255);&quot;&gt;+RFID Card usage journaling&lt;br&gt;+CCTV&lt;/font&gt;&lt;/b&gt;" style="html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=2;fontFamily=Verdana;fontSize=12;align=center;shape=mxgraph.ios7ui.horLines;" vertex="1" parent="1">
+          <mxGeometry x="800" y="481" width="200" height="69" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

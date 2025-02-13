@@ -98,6 +98,7 @@ System_Boundary(bookkeeping, "Bookkeeping") {
 Rel(1c, 1cDb, "Stores data in")
 Rel(bookkeeper, 1c, "Uses system")
 Rel(scheduleService, 1c, "Loads contracts on creation")
+Rel(1cDb, elt, "Earns spends information (anonymized in employers part)")
 
 System_Boundary(warehouse, "Warehouse") {
     Container(warehouseService, "1C Trade and Warehouse", "", "", $tags="microService")
