@@ -18,14 +18,9 @@ System_Boundary(messageBroker, "Message Broker") {
 
 System_Ext(lab, "Laboratory", "Provides access to medical analysis results")
 
-System_Boundary(emr, "EMR") {
-    Container(emrLog, "EMR Logbook", "Java", "RBAC+ABAC", $tags="microService")
-    Container(emrAnalysis, "EMR Analysis", "Java", "RBAC+ABAC", $tags="microService")
-}
-
 System_Boundary(lake, "Data Lakehouse") {
     Container(elt, "ELT", "Debezium + Kafka + Flink for DBs / Airflow for files", "", $tags="microService")
-    ContainerDb(lhStorage, "Data Lakehouse Storage", "S3-compatible + Iceberg", "Stores impersonalized raw data. AES256", $tags = "storage")
+    ContainerDb(lhStorage, "Data Lakehouse Storage", "S3-compatible + Iceberg", "Stores anonymous raw data. AES256", $tags = "storage")
 }
 Rel(elt, lhStorage, "Loads data", "TLS")
 
@@ -53,27 +48,80 @@ Rel(clientWebClient, identityService, "Perform requests", "HTTPS")
 Rel(receptionWebClient, identityService, "Perform requests", "HTTPS")
 Rel(doctorWebClient, identityService, "Perform requests", "HTTPS")
 
+System_Boundary(emr, "EMR") {
+    Container(emrLog, "EMR Logbook", "Java", "RBAC+ABAC", $tags="microService")
+    ContainerDb(emrLogDb, "EMR Logbook Database", "MongoDB", "Stores EMR log data. AES256", $tags = "storage")
+    Container(emrAnalysis, "EMR Analysis", "Java", "RBAC+ABAC", $tags="microService")
+    ContainerDb(emrAnalysisDb, "EMR Analysis Database", "MongoDB", "Stores EMR Analysis data. AES256", $tags = "storage")
+    ContainerDb(emrAnalysisStorage, "EMR Analysis File Storage", "S3", "Stores EMR Analysis files data. AES256", $tags = "storage")
+}
+Rel(doctorWebClient, emrLog, "Perform requests", "HTTPS")
+Rel(doctorWebClient, emrAnalysis, "Perform requests", "HTTPS")
+Rel(emrLog, emrLogDb, "Stores data in", "TLS")
+Rel(emrAnalysis, emrAnalysisDb, "Stores data in", "TLS")
+Rel(emrAnalysis, emrAnalysisStorage, "Stores data in", "TLS")
+Rel(emrAnalysis, rabbitMQ, "Subs analysis received event", "AMQPS")
+Rel(emrLogDb, elt, "Earns data from","TLS, anonymization")
+Rel(emrAnalysisDb, elt, "Earns data from","TLS, anonymization")
+
 System_Boundary(crm, "CRM") {
+    Container(crmService,"CRM", "", "TBD. Not enough requirements yet")
 }
 
 System_Boundary(labIntegration, "Laboratory Integration") {
+    Container(labIntegrationService, "Laboratory Integration Service", "Java", $tags="microService")
+    ContainerDb(labIntegrationServiceDb, "Laboratory Integration Service Database", "MongoDB", "Stores analysis registry raw data for 1 week (will be deleted after). AES256", $tags = "storage")
+    ContainerDb(labIntegrationServiceFileStorage, "Laboratory Integration File Storage", "S3", "Stores analysis raw data for 1 week (will be deleted after). AES256", $tags = "storage")
 }
+Rel(labIntegrationService, lab, "Gets analysis details", "HTTPS")
+Rel(lab, labIntegrationService, "Sends analysis completed webhook", "HTTPS")
+Rel(labIntegrationService, labIntegrationServiceDb, "Stores data in", "TLS")
+Rel(labIntegrationService, labIntegrationServiceFileStorage, "Stores data in", "TLS")
+Rel(labIntegrationService, rabbitMQ, "Pub analysis received event")
+Rel(emrAnalysis, labIntegrationServiceFileStorage, "Copy analysis file to own storage", "HTTPS")
 
 System_Boundary(schedule, "Schedule") {
-    Container(scheduleService, "Java", $tags="microService")
-    ContainerDb(scheduleServiceDb, "Schedule Database", "MongoDB", "Stores user data (not PII). AES256", $tags = "storage")
+    Container(scheduleService, "Schedule Service", "Java", $tags="microService")
+    ContainerDb(scheduleServiceDb, "Schedule Database", "MongoDB", "Stores schedule data. User PII is anonymized by user request AES256", $tags = "storage")
 }
 Rel(scheduleService, scheduleServiceDb, "Stores data in", "TLS")
 Rel(clientWebClient, scheduleService, "Perform requests", "HTTPS")
 Rel(receptionWebClient, scheduleService, "Perform requests", "HTTPS")
+Rel(doctorWebClient, scheduleService, "Perform requests", "HTTPS")
+Rel(rabbitMQ, scheduleService, "Consumes payment status event", "AMQPS")
+Rel(scheduleServiceDb, elt, "Earns data from", "TLS, anonymization")
 
 System_Boundary(bookkeeping, "Bookkeeping") {
     Container(1c, "1C", "", "", $tags="microService")
+    ContainerDb(1cDb, "1C DB", "", "Stores 1C data. Clients are tokenized. Employers PII information is deleted after 3 years after the end of their contract. AES256 (encrypted disk)", $tags="storage")
 }
+Rel(1c, 1cDb, "Stores data in")
+Rel(bookkeeper, 1c, "Uses system")
+Rel(scheduleService, 1c, "Loads contracts on creation")
 
 System_Boundary(warehouse, "Warehouse") {
+    Container(warehouseService, "1C Trade and Warehouse", "", "", $tags="microService")
+    Container(warehouseServiceDb, "1C Trade and Warehouse DB", "", "AES256 (encrypted disk)", $tags="storage")
 }
+Rel(warehouseService, warehouseServiceDb, "Stores data in")
+Rel(warehouseKeeper, warehouseService, "Uses system")
+Rel(warehouseServiceDb, elt, "Earns purchases data with determined masking of suppliers")
 
-System_Ext(acquiring, "Payment Gateway", "Receive online payments")
+System_Boundary(payments, "Payments") {
+    Container(paymentsService, "Payments Service", "Java", $tags="microService")
+}
+Rel(clientWebClient, paymentsService, "Performs requests", "HTTPS")
+
+System_Ext(acquiring, "Payment Gateway", "Sends online payments")
+Rel(paymentsService, acquiring, "Requests payment link")
+Rel(acquiring, paymentsService, "Receives payment status webhook")
+Rel(paymentsService, rabbitMQ, "Pub payment status event", "AMQPS")
+
+System_Boundary(security, "Security") {
+    Container(auditLogService, "Audit Log Service", "Java", $tags="microService")
+    ContainerDb(auditLogServiceDb, "Audit Log Service Database","ElasticSearch", $tags="storage")
+}
+Rel(auditLogService, auditLogServiceDb, "Stores data in")
+Rel(rabbitMQ, auditLogService, "Consumes events", "AMQPS")
 
 @enduml
